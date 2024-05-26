@@ -1,0 +1,46 @@
+
+dataset_name = repair
+datadir = /home/mbortolon/data/datasets/repair/group_27/RPf_00192b
+expname =  tensorf_group_27_RPf_00192b
+basedir = ./log
+
+downsample_train = 5.0
+
+n_iters = 9000
+batch_size = 4096
+
+N_voxel_init = 262144 # 128**3
+N_voxel_final = 27000000 # 300**3
+upsamp_list = [2000,3000,4000,5500,7000]
+update_AlphaMask_list = [2000,4000]
+
+N_vis = -1 # vis all testing images
+vis_every = 10000
+
+render_test = 1
+# render_path = 1
+
+model_name = TensorVMSplit
+n_lamb_sigma = [16,16,4]
+n_lamb_sh = [48,48,12]
+
+shadingMode = MLP_Fea
+fea2denseAct = relu
+
+density_shift = -1.0
+distance_scale = 1.0
+
+view_pe = 2
+fea_pe = 2
+
+# usual configuration for real objects
+TV_weight_density = 0.1
+TV_weight_app = 0.01
+
+# L1_weight_inital = 8e-5
+# L1_weight_rest = 4e-5
+rm_weight_mask_thre = 1e-4
+
+# shortcut for output additional results for debbuging
+# render_only = 1
+# ckpt = log/tensorf_group_27_RPf_00192b/tensorf_group_27_RPf_00192b.th
