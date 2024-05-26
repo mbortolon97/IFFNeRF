@@ -50,10 +50,10 @@ python train_eval_pose_est.py --config configs/truck.txt --datadir datasets/Tank
 ## Citation
 If you find our code or paper helps, please consider citing:
 ```
-@INPROCEEDINGS{Chen2022ECCV,
-  author = {Anpei Chen and Zexiang Xu and Andreas Geiger and Jingyi Yu and Hao Su},
-  title = {TensoRF: Tensorial Radiance Fields},
-  booktitle = {European Conference on Computer Vision (ECCV)},
-  year = {2022}
+@INPROCEEDINGS{Bortolon2024IFFNeRF,
+  author = {Bortolon, Matteo and Tsesmelis, Theodore and James, Stuart and Poiesi, Fabio and Del Bue, Alessio},
+  title = {IFFNeRF: Initialisation Free and Fast 6DoF pose estimation from a single image and a NeRF model},
+  booktitle = {ICRA},
+  year = {2024}
 }
 ```
